@@ -1,0 +1,17 @@
+{
+  "name": "twitterapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify app.js -o bundle.js"
+   },
+  "author": "Yasser Beyer",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^14.4.0",
+    "jquery": "^3.2.1",
+    "twitter": "^1.7.1"
+  }
+}

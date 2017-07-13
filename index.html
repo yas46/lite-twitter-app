@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yas twitter Lite App</title>
+    <script src="bundle.js"></script>
+    <link rel="stylesheet" type="text/css" href="app.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <ul>
+                <li class="nav-items" name="DevYas46"><a class="link active" href="#">Me</a></li>
+                <li class="nav-items" name="FireEye"><a class="link" href="#FireEye">@FireEye</a></li>
+                <li class="nav-items" name="JavaScript"><a class="link" href="#JavaScript">@JavaScript</a></li>
+            </ul>
+        </div>
+  </header>
+    <div class="container">
+        <div class="left-container">
+            <div class="profile-container">
+                <input type="text" id="tweet-text" placeholder="Compose new Tweet..." onkeyup="myFunction()">
+            </div>
+        </div>
+        <div class="tweets-container">
+            <h2>Tweets</h2>
+            <hr>
+            <ul class="tweets"></ul>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+//makes sure that input only takes no more than 140 characters
+function myFunction() {
+    var inputArea = document.getElementById("tweet-text");
+    if (inputArea.value.length > 140) {
+        inputArea.value = inputArea.value.substring(0, 140);
+    }
+}
+</script>
