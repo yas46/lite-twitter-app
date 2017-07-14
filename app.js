@@ -8,7 +8,7 @@ var params = {
         screen_name: 'DevYas46',
         count: 10,
         exclude_replies: true
-}
+        }
 
 $( document ).ready(function() {
 
@@ -20,8 +20,8 @@ $( document ).ready(function() {
             //iterarate through the tweets and lists them out to the DOM
             tweets.map(function (tweet, index) {
                 $(".tweets").append('<li class="tweet"><img class="avatar" src="' + tweet.user.profile_image_url + '" alt="avatar"/><div class="tweet-copies"><div class="names-container"><span class="name-text">' + tweet.user.name + '</span> <span class="screen-name-text">@' + tweet.user.screen_name + '</span></div><span class="tweet-text">' + tweet.text + '</span></div></li><hr class="tweet-line" />')
-                })
-            });
+            })
+        });
     };
 
     //posts a tweet when enter key is pressed in the input field
@@ -50,6 +50,5 @@ $( document ).ready(function() {
         $("li[class=nav-items] > a").removeClass("active");
         $(this).child('a').addClass("active");
     });
-
 
 })
